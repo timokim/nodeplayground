@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
+// error handling route
 errhandle.fname(app);
 
 var server = app.listen(app.get('port'), function() {
